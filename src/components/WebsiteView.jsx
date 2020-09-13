@@ -2,8 +2,7 @@ import React from "react";
 import "../App.css";
 import NavigationBar from "./NavigationBar.jsx";
 import Introduction from "./Introduction.jsx";
-// import Header from "./Header";
-// import About from "./About";
+import About from "./About";
 // import Experience from "./Experience";
 // import Projects from "./Projects";
 
@@ -15,6 +14,9 @@ const App = () => {
       </div>
       <div class="introductionSection">
         <Introduction />
+      </div>
+      <div class="aboutSection">
+        <About />
       </div>
       {/* <Header />
       <About />

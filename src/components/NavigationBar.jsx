@@ -1,22 +1,16 @@
 import React from "react";
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar, Nav } from "react-bootstrap";
+import { Container, Navbar, Nav } from "react-bootstrap";
 
-import happiness from "../images/happiness.png";
+import brandImage from "../images/favicon.png";
 
 const NavigationBar = () => {
   return (
-    <div class="container">
-      <Navbar expand="lg">
+    <Container>
+      <Navbar expand="lg" sticky="top">
         <Navbar.Brand href="/">
-          <div class="happiness-image-container">
-            <img
-              src={happiness}
-              class="happiness-image"
-              alt="Icon made by Freepik from www.flaticon.com"
-            />
-          </div>
+          <h1 class="navbar-name">b.eng</h1>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -27,7 +21,7 @@ const NavigationBar = () => {
           </Nav>
         </Navbar.Collapse>
       </Navbar>
-    </div>
+    </Container>
   );
 };
 

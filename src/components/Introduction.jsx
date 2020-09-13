@@ -1,19 +1,22 @@
 import React from "react";
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { Container } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
 
 const Introduction = () => {
   return (
-    <div class="container">
+    <Container>
       <div class="typewriterContainer">
         <Typewriter
           onInit={(typewriter) => {
             typewriter
-              .typeString("Hi! I'm Brandon Eng")
-              .pauseFor(3000)
-              .deleteChars(4)
-              .typeString(", a full-stack web developer")
+              .typeString("Hi!")
+              .pauseFor(2000)
+              .typeString(" I'm Brandon Eng!")
+              .pauseFor(2000)
+              .deleteChars(5)
+              .typeString(", a full-stack web developer!")
               .start();
           }}
           options={{
@@ -22,7 +25,7 @@ const Introduction = () => {
           }}
         />
       </div>
-    </div>
+    </Container>
   );
 };
 
