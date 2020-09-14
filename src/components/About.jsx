@@ -7,16 +7,16 @@ import myself from "../images/myself.jpg";
 const About = () => {
   return (
     <Container className="section-container">
-      <h2 class="section-title">A little bit about me</h2>
+      <h2 className="section-title">A little bit about me</h2>
       <hr />
-      <Row>
-        <Col md={12} lg={4}>
-          <div class="myself-image-container">
-            <img class="myself-image" src={myself} alt="" />
+      <Row className="justify-content-center">
+        <Col xs={8} md={5}>
+          <div className="myself-image-container">
+            <img className="myself-image" src={myself} alt="" />
           </div>
         </Col>
-        <Col md={12} lg={8}>
-          <div class="myself-description-container">
+        <Col xs={11} md={7}>
+          <div className="myself-description-container">
             <h3>Nice to meet you!</h3>
             <p>
               I am a Computer Science graduate from Cornell University and have

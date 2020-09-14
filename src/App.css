@@ -23,18 +23,38 @@
   color: #4F4F4F
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .section-title {
   font-size: 40px;
-  text-align: center;
+  margin-left: 3%;
 }
 
 .section-container {
-  padding: 40px 0px;
+  padding: 20px 0px;
+}
+
+/* Fade In */
+
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 1200ms ease-out, transform 600ms ease-out,
+    visibility 1200ms ease-out;
+  will-change: opacity, transform, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
 }
 
 /* Navbar */
 
-.navigationSection {
+.navigation-section {
   background-color: #F7F7F7;
 }
 
@@ -54,30 +74,42 @@
 
 /* Introduction */
 
-.typewriterContainer {
+.typewriter-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 800px;
+  height: 90vh;
   margin: auto;
 }
 
-.typewriterText {
+.typewriter-text {
   font-size: 52px;
   color: #4F4F4F;
 }
 
-.typewriterCursor {
+.typewriter-cursor {
   font-size: 52px;
   color: #187BCD;
 }
 
-/* About */
-
-.aboutSection {
-  background-color:  #F7F7F7;
+.arrow-icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
+
+.arrow-icon-container:hover {
+  cursor: pointer;
+}
+
+.arrow-icon {
+  width: 48px;
+  height: 48px;
+  fill: #DFDFDF;
+}
+
+/* About */
 
 .about-container {
   display: flex;
