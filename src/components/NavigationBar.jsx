@@ -1,13 +1,39 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Navbar, Nav } from "react-bootstrap";
+import $ from "jquery";
 
 const NavigationBar = (props) => {
   const { aboutRef, projectsRef, contactRef, scrollToRef } = props;
+
+  useEffect(() => {
+    if ($(".smart-scroll").length > 0) {
+      // check if element exists
+      let last_scroll_top = 0;
+      $(window).on("scroll", function () {
+        let scroll_top = $(this).scrollTop();
+        if (scroll_top < last_scroll_top) {
+          $(".smart-scroll")
+            .removeClass("scrolled-down")
+            .addClass("scrolled-up");
+        } else {
+          $(".smart-scroll")
+            .removeClass("scrolled-up")
+            .addClass("scrolled-down");
+        }
+        last_scroll_top = scroll_top;
+      });
+    }
+  }, []);
+
   return (
-    <Container>
-      <Navbar expand="lg" sticky="top">
+    <Navbar
+      expand="lg"
+      className="navigation-section smart-scroll"
+      sticky="top"
+    >
+      <Container className="">
         <Navbar.Brand href="/">
           <h1 className="navbar-name">b.eng</h1>
         </Navbar.Brand>
@@ -25,8 +51,8 @@ const NavigationBar = (props) => {
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
-      </Navbar>
-    </Container>
+      </Container>
+    </Navbar>
   );
 };
 

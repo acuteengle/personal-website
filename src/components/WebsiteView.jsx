@@ -20,14 +20,12 @@ const App = () => {
 
   return (
     <div>
-      <div className="navigation-section">
-        <NavigationBar
-          aboutRef={aboutRef}
-          projectsRef={projectsRef}
-          contactRef={contactRef}
-          scrollToRef={scrollToRef}
-        />
-      </div>
+      <NavigationBar
+        aboutRef={aboutRef}
+        projectsRef={projectsRef}
+        contactRef={contactRef}
+        scrollToRef={scrollToRef}
+      />
       <div className="introduction-section">
         <Introduction aboutRef={aboutRef} scrollToRef={scrollToRef} />
       </div>
