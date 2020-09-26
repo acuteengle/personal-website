@@ -2,6 +2,7 @@ import React from "react";
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import myself from "../images/myself.jpg";
 
 const About = () => {
@@ -19,31 +20,58 @@ const About = () => {
           <div className="myself-description-container">
             <h3>Nice to meet you!</h3>
             <p>
-              I am a Computer Science graduate from Cornell University and have
-              been working in the Software Engineering industry for 8 years. No
-              matter what your goal is with coding (finishing projects,
-              preparing for an interview, or even learning the basics), I can
-              mentor you by helping you hone your skills and build your
-              confidence. Back at University, I was a TA for several Web
-              Development courses and I loved helping students work on their
-              projects and fully understand the principle coding concepts in the
-              process. I only got to this point after spent countless hours
-              building projects and websites on my own for personal clients and
-              live customers. I have built many products using a wide range of
-              coding languages (HTML, CSS, Javascript, jQuery, React, Python,
-              PHP, SQL). I have also worked at many different companies, both
-              big (American Express, Workday) and small (start ups of 10
-              people). I can provide insight on the culture and skills that you
-              will need to work at both. In addition, I have spent countless
-              hours both interviewing and being interviewed for the the dreaded
-              technical interview. I understand what qualities interviewers look
-              for and I can help walk you through my thought process of how you
-              should approach problems and what things you should look for. If
-              any of these things sound interesting to you, I'd love to schedule
-              some time to work with you! It would be bring me so much joy to
-              help you work on whatever project you are interested in and teach
-              you along the way!
+              My name is Brandon Eng and I am a Computer Science graduate from
+              Cornell University and have been working in the Software
+              Engineering industry for 8 years. Having worked at many different
+              companies, both big and small, and I have worn many different hats
+              from being a reliable individual contributor, an
+              architect/technical lead, as well as a mentor to students and
+              peers. I have enjoyed problem solving in my full-time work and
+              contract/freelance roles, and what really inspires me is working
+              on fun and interesting projects. I am passionate about learning
+              and personal growth and love the opportunity to help others grow
+              along the way.
             </p>
+            <p>
+              In my free time, I enjoy freestyle dancing and portrait
+              photography.
+            </p>
+            <div className="social-media-icons">
+              <a
+                href="https://www.linkedin.com/in/brandon-eng"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={["fab", "linkedin"]}
+                  size="2x"
+                  color="green"
+                  className="icon"
+                />
+              </a>
+              <a
+                href="https://github.com/acuteengle"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={["fab", "github"]}
+                  size="2x"
+                  className="icon"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/b.engphotography/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={["fab", "instagram"]}
+                  size="2x"
+                  className="icon"
+                />
+              </a>
+            </div>
           </div>
         </Col>
       </Row>

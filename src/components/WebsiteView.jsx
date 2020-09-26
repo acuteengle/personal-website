@@ -5,6 +5,7 @@ import FadeInSection from "../helper/FadeInSection";
 import NavigationBar from "./NavigationBar.jsx";
 import Introduction from "./Introduction.jsx";
 import About from "./About";
+import Skills from "./Skills";
 import Projects from "./Projects";
 import Contact from "./Contact";
 
@@ -15,6 +16,7 @@ const scrollToRef = (ref) => (event) => {
 
 const App = () => {
   const aboutRef = createRef();
+  const skillsRef = createRef();
   const projectsRef = createRef();
   const contactRef = createRef();
 
@@ -22,6 +24,7 @@ const App = () => {
     <div>
       <NavigationBar
         aboutRef={aboutRef}
+        skillsRef={skillsRef}
         projectsRef={projectsRef}
         contactRef={contactRef}
         scrollToRef={scrollToRef}
@@ -33,6 +36,12 @@ const App = () => {
       <FadeInSection>
         <div className="about-section">
           <About />
+        </div>
+      </FadeInSection>
+      <span ref={skillsRef}></span>
+      <FadeInSection>
+        <div className="skills-section">
+          <Skills />
         </div>
       </FadeInSection>
       <span ref={projectsRef}></span>

@@ -20,6 +20,9 @@
 
 * {
   font-family: "Europa";
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
   color: #4F4F4F
 }
 
@@ -36,6 +39,7 @@ html {
   padding: 20px 0px;
 }
 
+
 /* Fade In */
 
 .fade-in-section {
@@ -51,6 +55,7 @@ html {
   transform: none;
   visibility: visible;
 }
+
 
 /* Navbar */
 
@@ -85,6 +90,7 @@ html {
 .scrolled-up{
    transform:translateY(0); transition: all 0.3s ease-in-out;
 }
+
 
 /* Introduction */
 
@@ -121,7 +127,13 @@ html {
   width: 48px;
   height: 48px;
   fill: #D3D3D3;
+  transition: all 0.5s;
 }
+
+.arrow-icon:hover {
+  fill: #828282;
+}
+
 
 /* About */
 
@@ -150,4 +162,48 @@ html {
   justify-content: center;
   align-items: flex-start;
   padding: 20px;
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.social-media-icons a {
+  margin: 0px 5px;
+  transition: all 0.3s;
+}
+
+.social-media-icons a:hover {
+  transform: translateY(-2px);
+}
+
+.social-media-icons a:hover .icon{
+  transition: all 0.3s;
+  color: #828282;
+}
+
+.icon {
+  color: #4F4F4F;
+}
+
+
+/* Skills */
+
+.skill-image-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.skill-image {
+  width: 100%;
+}
+
+.skill-title {
+  padding: 10px 0px;
 }
