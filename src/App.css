@@ -77,6 +77,10 @@ html {
   padding: 20px;
 }
 
+.nav-link:hover {
+  transition: all 0.3s;
+}
+
 .smart-scroll{
   position: fixed;
   top: 0;
@@ -111,6 +115,11 @@ html {
 .typewriter-cursor {
   font-size: 52px;
   color: #187BCD;
+}
+
+#scroll-to-see-more {
+  opacity: 0;
+  color:#828282;
 }
 
 .arrow-icon-container {

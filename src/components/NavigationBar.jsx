@@ -40,13 +40,25 @@ const NavigationBar = (props) => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link href="#about" onClick={scrollToRef(aboutRef)}>
+            <Nav.Link
+              href="#about"
+              className="nav-link"
+              onClick={scrollToRef(aboutRef)}
+            >
               About
             </Nav.Link>
-            <Nav.Link href="#projects" onClick={scrollToRef(projectsRef)}>
+            <Nav.Link
+              href="#projects"
+              className="nav-link"
+              onClick={scrollToRef(projectsRef)}
+            >
               Projects
             </Nav.Link>
-            <Nav.Link href="#contact" onClick={scrollToRef(contactRef)}>
+            <Nav.Link
+              href="#contact"
+              className="nav-link"
+              onClick={scrollToRef(contactRef)}
+            >
               Contact
             </Nav.Link>
           </Nav>

@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 import Typewriter from "typewriter-effect";
+import $ from "jquery";
 
 const Introduction = (props) => {
   const { aboutRef, scrollToRef } = props;
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      $("#scroll-to-see-more").fadeTo(2000, 1);
+    }, 13000);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <Container>
@@ -26,6 +34,7 @@ const Introduction = (props) => {
             cursorClassName: "typewriter-cursor",
           }}
         />
+        <p id="scroll-to-see-more">(scroll to see more)</p>
       </div>
       <div className="arrow-icon-container" onClick={scrollToRef(aboutRef)}>
         <svg
