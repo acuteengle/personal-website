@@ -6,6 +6,7 @@ import NavigationBar from "./NavigationBar.jsx";
 import Introduction from "./Introduction.jsx";
 import About from "./About";
 import Skills from "./Skills";
+import Work from "./Work";
 import Projects from "./Projects";
 import Contact from "./Contact";
 
@@ -14,9 +15,10 @@ const scrollToRef = (ref) => (event) => {
   ref.current.scrollTop -= 1000;
 };
 
-const App = () => {
+const WebsiteView = (props) => {
   const aboutRef = createRef();
   const skillsRef = createRef();
+  const workRef = createRef();
   const projectsRef = createRef();
   const contactRef = createRef();
 
@@ -44,6 +46,12 @@ const App = () => {
           <Skills />
         </div>
       </FadeInSection>
+      <span ref={workRef}></span>
+      <FadeInSection>
+        <div className="work-section">
+          <Work />
+        </div>
+      </FadeInSection>
       <span ref={projectsRef}></span>
       <FadeInSection>
         <div className="projects-section">
@@ -60,4 +68,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default WebsiteView;

@@ -16,9 +16,9 @@ import Express from "../images/skills/express.png";
 import Flask from "../images/skills/flask.png";
 import Django from "../images/skills/django.png";
 
-import SkillImage from "../helper/SkillImage";
+import SkillTile from "../helper/SkillTile";
 
-const Skills = () => {
+const Skills = (props) => {
   const skills = [
     {
       url: react,
@@ -37,12 +37,12 @@ const Skills = () => {
       title: "Git/Github",
     },
     {
-      url: HTMLCSSJS,
-      title: "HTML/CSS/Javascript",
-    },
-    {
       url: Jquery,
       title: "jQuery",
+    },
+    {
+      url: HTMLCSSJS,
+      title: "HTML/CSS/Javascript",
     },
     {
       url: Python,
@@ -54,7 +54,7 @@ const Skills = () => {
     },
     {
       url: MaterialUI,
-      title: "Material UI",
+      title: "MaterialUI",
     },
     {
       url: Express,
@@ -77,7 +77,7 @@ const Skills = () => {
         {skills.map((skill, index) => {
           return (
             <Col xs={3} md={2} key={index}>
-              <SkillImage url={skill.url} title={skill.title} />
+              <SkillTile url={skill.url} title={skill.title} />
             </Col>
           );
         })}

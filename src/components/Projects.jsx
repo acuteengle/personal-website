@@ -3,10 +3,10 @@ import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "react-bootstrap";
 
-const Projects = () => {
+const Projects = (props) => {
   return (
     <Container className="section-container">
-      <h2 className="section-title"> Projects</h2>
+      <h2 className="section-title">Side Projects</h2>
       <hr />
     </Container>
   );

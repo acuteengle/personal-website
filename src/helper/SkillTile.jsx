@@ -2,7 +2,7 @@ import React from "react";
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const SkillImage = (props) => {
+const SkillTile = (props) => {
   const { url, title } = props;
   return (
     <div className="skill-image-container">
@@ -12,4 +12,4 @@ const SkillImage = (props) => {
   );
 };
 
-export default SkillImage;
+export default SkillTile;

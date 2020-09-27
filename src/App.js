@@ -5,9 +5,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from "@fortawesome/free-brands-svg-icons";
 library.add(fab)
 
-const App = () => {
+const App = (props) => {
   return (
-    <WebsiteView />
+    <WebsiteView {...props} />
   );
 }
 

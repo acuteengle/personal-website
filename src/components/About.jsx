@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import myself from "../images/myself.jpg";
 
-const About = () => {
+const About = (props) => {
   return (
     <Container className="section-container">
       <h2 className="section-title">A little bit about me</h2>
