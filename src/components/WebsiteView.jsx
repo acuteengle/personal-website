@@ -9,6 +9,7 @@ import Skills from "./Skills";
 import Work from "./Work";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 const scrollToRef = (ref) => (event) => {
   ref.current.scrollIntoView(true, { behavior: "smooth" });
@@ -27,6 +28,7 @@ const WebsiteView = (props) => {
       <NavigationBar
         aboutRef={aboutRef}
         skillsRef={skillsRef}
+        workRef={workRef}
         projectsRef={projectsRef}
         contactRef={contactRef}
         scrollToRef={scrollToRef}
@@ -64,6 +66,14 @@ const WebsiteView = (props) => {
           <Contact />
         </div>
       </FadeInSection>
+      <Footer
+        aboutRef={aboutRef}
+        skillsRef={skillsRef}
+        workRef={workRef}
+        projectsRef={projectsRef}
+        contactRef={contactRef}
+        scrollToRef={scrollToRef}
+      />
     </div>
   );
 };

@@ -46,7 +46,6 @@ const About = (props) => {
                 <FontAwesomeIcon
                   icon={["fab", "linkedin"]}
                   size="2x"
-                  color="green"
                   className="icon"
                 />
               </a>

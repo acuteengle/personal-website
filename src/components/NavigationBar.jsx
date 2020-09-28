@@ -5,7 +5,14 @@ import { Container, Navbar, Nav } from "react-bootstrap";
 import $ from "jquery";
 
 const NavigationBar = (props) => {
-  const { aboutRef, skillsRef, projectsRef, contactRef, scrollToRef } = props;
+  const {
+    aboutRef,
+    skillsRef,
+    workRef,
+    projectsRef,
+    contactRef,
+    scrollToRef,
+  } = props;
 
   useEffect(() => {
     if ($(".smart-scroll").length > 0) {
@@ -45,6 +52,9 @@ const NavigationBar = (props) => {
             </Nav.Link>
             <Nav.Link className="nav-link" onClick={scrollToRef(skillsRef)}>
               Skills
+            </Nav.Link>
+            <Nav.Link className="nav-link" onClick={scrollToRef(workRef)}>
+              Experience
             </Nav.Link>
             <Nav.Link className="nav-link" onClick={scrollToRef(projectsRef)}>
               Projects

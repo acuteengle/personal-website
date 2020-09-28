@@ -337,3 +337,34 @@ html {
   transition: all 0.3s;
   transform: translateY(-4px);
 }
+
+
+/* Contact */
+
+.contact-subtext-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.contact-subtext-container p {
+  font-size: 20px;
+}
+
+.contact-container {
+  padding: 40px 40px;
+}
+
+
+/* Footer */
+
+.footer-container {
+  background-color: #F7F7F7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0px;
+}
