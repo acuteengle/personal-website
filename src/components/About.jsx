@@ -3,6 +3,7 @@ import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import myself from "../images/myself.jpg";
 
 const About = (props) => {

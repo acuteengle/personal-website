@@ -193,7 +193,7 @@ html {
   color: #828282;
 }
 
-.icon {
+.social-media-icons a .icon {
   color: #4F4F4F;
 }
 
@@ -241,7 +241,7 @@ html {
 .work-image-container:hover {
   cursor: pointer;
   transition: all 0.5s;
-  opacity: 0.6;
+  opacity: 0.7;
   box-shadow: 4px 4px 20px 1px #020202;
 }
 
@@ -263,5 +263,77 @@ html {
 
 .work-modal-header div img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: 4px;
+}
+
+
+/* Projects */
+
+.projects-container {
+  width: 80%;
+  margin: auto; 
+}
+
+.projects-container p {
+  text-align: right;
+}
+
+.project-tile-container {
+  margin: 10px 0px;
+}
+
+.project-image-container {
+  border: 1px solid lightgray;
+  background-color: black;
+}
+
+.project-image-container .title {
+  display: none;
+}
+
+.project-image-container .github-link {
+  display: none;
+}
+
+.project-image-container p {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.github-link{
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 24px;
+  z-index: 1;
+}
+
+.project-image-container img {
+  width: 100%;
+}
+
+.project-tile-container a:hover .project-image-container img{
+  transition: all 0.5s;
+  opacity: 0.3;
+}
+
+.project-tile-container a:hover .project-image-container .title{
+  transition: all 0.5s;
+  display: block;
+}
+
+.project-tile-container a:hover .project-image-container .github-link{
+  transition: all 0.5s;
+  display: block;
+}
+
+.github-link:hover {
+  color: lightgray;
+  transition: all 0.3s;
+  transform: translateY(-4px);
 }
