@@ -18,6 +18,7 @@ const Contact = (props) => {
         <Col xs={12} md={8}>
           <div className="contact-form">
             <form name="contact" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="contact" />
               <div className="form-group">
                 <label>
                   <b>Name *</b>
