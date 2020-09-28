@@ -1,9 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
+import $ from "jquery";
+
+const encode = (data) => {
+  return Object.keys(data)
+    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
 
 const Contact = (props) => {
+  const [formResponse, setFormResponse] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+
+    const fields = $("#contact_form").serializeArray();
+
+    const formData = {
+      "form-name": form.getAttribute("name"),
+    };
+
+    for (const f of fields) {
+      formData[f.name] = f.value;
+    }
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode(formData),
+    })
+      .then(() => {
+        setFormResponse("Thanks! I'll get back to you very soon!");
+      })
+      .catch((error) => {
+        setFormResponse(error);
+      });
+  };
+
   return (
     <Container className="section-container">
       <h2 className="section-title">Get in touch!</h2>
@@ -18,10 +54,12 @@ const Contact = (props) => {
         <Col xs={12} md={8}>
           <div className="contact-form">
             <form
+              id="contact_form"
               name="contact"
               method="POST"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
+              onSubmit={handleSubmit}
             >
               <input type="hidden" name="form-name" value="contact" />
               <div className="form-group">
@@ -67,6 +105,7 @@ const Contact = (props) => {
                 <b>Submit</b>
               </button>
             </form>
+            <p>{formResponse}</p>
           </div>
         </Col>
       </Row>
