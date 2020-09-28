@@ -11,8 +11,12 @@ const WorkTile = (props) => {
   };
 
   return (
-    <div className="work-image-container" onClick={handleClick}>
-      <img className="work-image" src={workDetails.url} alt="" />
+    <div
+      className="work-image-container"
+      id={workDetails.id}
+      onClick={handleClick}
+    >
+      <img src={workDetails.url} alt="" className="work-image" />
     </div>
   );
 };

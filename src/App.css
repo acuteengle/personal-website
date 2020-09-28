@@ -220,20 +220,29 @@ html {
 
 /* Work */
 
-#work-container {
+.work-container {
   width: 80%;
   margin: auto; 
 }
 
+.work-container p {
+  text-align: right;
+}
+
+.work-tile-container {
+  margin: 10px 0px;
+}
+
 .work-image-container {
   width: 100%;
-  padding: 10px;
+  box-shadow: 4px 4px 12px 1px #686868;
 }
 
 .work-image-container:hover {
   cursor: pointer;
   transition: all 0.5s;
-  opacity: 0.4;
+  opacity: 0.6;
+  box-shadow: 4px 4px 20px 1px #020202;
 }
 
 .work-image {
@@ -254,4 +263,5 @@ html {
 
 .work-modal-header div img {
   width: 100%;
+  border-radius: 8px;
 }
