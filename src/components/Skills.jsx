@@ -42,7 +42,7 @@ const Skills = (props) => {
     },
     {
       url: HTMLCSSJS,
-      title: "HTML/CSS/Javascript",
+      title: "HTML/CSS/JS",
     },
     {
       url: Python,
