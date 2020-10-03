@@ -12,7 +12,7 @@ const About = (props) => {
       <h2 className="section-title">A little bit about me</h2>
       <hr />
       <Row className="justify-content-center">
-        <Col xs={8} md={5}>
+        <Col xs={9} md={5}>
           <div className="myself-image-container">
             <img className="myself-image" src={myself} alt="" />
           </div>
@@ -22,20 +22,27 @@ const About = (props) => {
             <h3>Nice to meet you!</h3>
             <p>
               My name is Brandon Eng and I am a Computer Science graduate from
-              Cornell University and have been working in the Software
-              Engineering industry for 8 years. Having worked at many different
-              companies, both big and small, and I have worn many different hats
-              from being a reliable individual contributor, an
-              architect/technical lead, as well as a mentor to students and
-              peers. I have enjoyed problem solving in my full-time work and
-              contract/freelance roles, and what really inspires me is working
-              on fun and interesting projects. I am passionate about learning
-              and personal growth and love the opportunity to help others grow
-              along the way.
+              Cornell University. I have been working in the Software
+              Engineering industry for 8 years and have experience worked at
+              many different companies, both big and small. I have held many
+              different responsibilities and worn many different hats from being
+              a reliable individual contributor, an architect/tech lead, a
+              mentor and coach, as well as a technical consultant. What really
+              inspires me is working on fun and interesting projects. I have
+              enjoyed solving difficult problems in my full-time work and
+              contract/freelance roles. I am passionate about learning and
+              personal growth and love the opportunity to help others grow along
+              the way.
             </p>
             <p>
-              In my free time, I enjoy freestyle dancing and portrait
-              photography.
+              In my free time, I enjoy freestyle dancing, playing golf, running
+              marathons, cooking, traveling and shooting portrait photography.
+            </p>
+            <p className="d-none d-md-block">
+              I hope you enjoy my website! (Viewable on mobile as well!)
+            </p>
+            <p className="d-md-none d-xs-block">
+              I hope you enjoy my website! (Viewable on desktop as well!)
             </p>
             <div className="social-media-icons">
               <a

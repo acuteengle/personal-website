@@ -20,12 +20,13 @@ const Work = (props) => {
       title: "Tawkify",
       position: "Full-Stack Software Engineer",
       type: "Full-Time",
-      description: [
-        "Built beautiful and responsive Front End UI using React.",
-        "Built REST API routes to do server side data fetches and validations in response to client side requests.",
-        "Set up middlewares between our client side and our API's using Express routes to handle validating permissions and redirecting the user.",
-        "Designed and developed relational database table schemas using mySQL and considered future performance and adaptability.",
-        "Integrated Stripe, Sendgrid, Calendy, Segment, Optimizely.",
+      description:
+        "Built features using React (and React Hooks), Material UI, Recompose on the Front-End as well as Node Express and PHP Slim on the backend.",
+      highlights: [
+        "Lead the initiative to build our brand new web application to allow users to sign up and create an account.",
+        "Developed RESTful API’s with middlewares for validations and redirecting.",
+        "Designed and developed relational database table schemas using mySQL.",
+        "Integrated several third party frameworks with our system (i.e. Stripe, Sendgrid, Segment, Optimizely, Webflow, Calendly).",
       ],
     },
     {
@@ -34,11 +35,15 @@ const Work = (props) => {
       title: "Workday",
       position: "Full-Stack Software Engineer",
       type: "Full-Time",
-      description: [
-        "Technical lead and Architect for the Academic Foundation functional area on the Workday Student product.",
-        "Premier point of contact for my functional area for cross team discussions about dependencies, overlap, and API’s.",
-        "Developed numerous critical features for 7 product releases to enable Student to go live with its very first customers.",
-        "Worked directly with product implementors to triage and resolved production issues to enable customer success.",
+      description:
+        "Technical lead for the Academic Foundation functional area on the Workday Student product. ",
+      highlights: [
+        "Lead point of contact for for cross team discussions about dependencies, overlap, and API’s pertaining to my functional area.",
+        "Official Code Reviewer for code changes in the Academic Foundation code base.",
+        "Designed and developed many features critical for go-live with our very first customers.",
+        "Triaged and resolved numerous time-sensitive P0 issues.",
+        "Collaborated with Product Managers and Designers to construct customer-driven solutions and user flows.",
+        "Lead and worked in an agile development environment.",
       ],
     },
     {
@@ -47,10 +52,12 @@ const Work = (props) => {
       title: "Envoys",
       position: "Web Development Instructor",
       type: "Contract",
-      description: [
-        "Developed the curriculum for Envoys' Tech & Coding in the 21st Century program. Lead instruction for the two cohorts (10-20 students each cohort) through zoom (remote program due to COVID).",
-        "Taught the foundations of web development using collaborative coding environment tools.",
-        "Created activities and assignments to assess student's understanding of the material.",
+      description:
+        "Developed the curriculum and lead instruction for multiple cohorts of Envoys' Tech & Coding in the 21st Century program.",
+      highlights: [
+        "Was the solo instructor for two cohorts of students from Phillips Exeter Academy (10-20 students each cohort).",
+        "Taught the foundations of web development and how to use the tools most commonly used in industry.",
+        "Created activities and assignments to assess students’ understandings of the material.",
         "Designed a final project for students to present what they have learned to the leaders of the organization as well as friends and family.",
       ],
     },
@@ -60,8 +67,10 @@ const Work = (props) => {
       title: "American Express",
       position: "Front-End Web Developer",
       type: "Internship",
-      description: [
-        "Built a completely new front end interface for the Merchant Financing small business loan website.",
+      description:
+        "Developed various features, both front-end and back-end on the Project Mercury team.",
+      highlights: [
+        "Built a completely new front-end landing page for the Merchant Financing product.",
         "Incorporated animations and functionality to make the online experience easier for small businesses to apply for loans.",
         "Created a program to convert Java Objects and JSON data types between each other and transfer them across systems while maintaining their fields and attributes.",
       ],
@@ -72,11 +81,13 @@ const Work = (props) => {
       title: "Wyzant",
       position: "Tutor",
       type: "Freelance",
-      description: [
-        "Tutored for over 200 hours with students of all ages and skill levels on various coding languages, projects, assignments, libraries, frameworks, tech stacks.",
-        "It was a great experience (and tons of fun) learning about various libraries, frameworks, and tech stacks and how they were being used, as well as helping my students better understand the concepts that they were confused about.",
-        "Worked with high school students looking to get ahead, college students working on more advanced projects and courses, and adults who need consulting for their job or are looking to pivot careers.",
-        "Helped students with various topics including (but not limited to): HTML, CSS, Javascript, jQuery, Bootstrap, React, Python, Flask, Django, Node, Express, ChartJS, Firebase, HandlebarsJS, MongoDB, mySQL, Axios, Discrete Math, git.",
+      description:
+        "Tutored over 200 hours with students of all ages (working adults included) and skill levels on various coding languages, projects, assignments, libraries, frameworks, and tech stacks. ",
+      highlights: [
+        "Was hired for several consulting sessions by multiple companies looking for advice and guidance on how they should develop their web application.",
+        "Coached working adults looking to better understand coding concepts and languages for their job as well as those looking to pivot in their careers to tech.",
+        "Worked with high school students looking to get ahead, college students working on more advanced projects and courses, and adults taking full-time coding bootcamps.",
+        "Tutored topics include (but are not limited to): HTML, CSS, Javascript, jQuery, Bootstrap, React, Python, Flask, Django, Node, Express, ChartJS, Firebase, Sequelize, HandlebarsJS, MongoDB, mySQL, Axios, Vue, Discrete Math, git/GitHub.",
       ],
     },
     {
@@ -85,9 +96,11 @@ const Work = (props) => {
       title: "TRX Systems",
       position: "Android Developer",
       type: "Internship",
-      description: [
-        "Enhanced TRX’s 3D tracking product by writing Java code that monitors and reports changes in elevation and position to improve user location accuracy.",
-        "Developed from scratch an Android application that utilizes the TRX tracking system and an SQLite database to provide navigation services and guide a user with visual deficiencies (i.e full or partial blindness).",
+      description:
+        "Coded in Java to build an Android mobile app as well as communicate with our back-end API’s.",
+      highlights: [
+        "Enhanced the precision of TRX’s 3D tracking product when dealing with changes in elevation.",
+        "Developed from scratch an Android application that utilizes the TRX tracking system and an SQLite database to navigate a user with visual deficiencies (i.e full or partial blindness).",
       ],
     },
   ];
@@ -128,7 +141,9 @@ const Work = (props) => {
               <img src={modalDetails.url} alt="" />
             </div>
             <div>
-              <Modal.Title>{modalDetails.title}</Modal.Title>
+              <Modal.Title>
+                <h2 className="work-modal-title">{modalDetails.title}</h2>
+              </Modal.Title>
               <p>
                 {modalDetails.position} ({modalDetails.type})
               </p>
@@ -136,10 +151,13 @@ const Work = (props) => {
           </div>
         </Modal.Header>
         <Modal.Body>
+          <h4>Overview:</h4>
+          <p>{modalDetails.description}</p>
+          <h4>Key Highlights:</h4>
           <ul>
-            {modalDetails.description &&
-              modalDetails.description.map((d, index) => {
-                return <li key={index}>{d}</li>;
+            {modalDetails.highlights &&
+              modalDetails.highlights.map((highlight, index) => {
+                return <li key={index}>{highlight}</li>;
               })}
           </ul>
         </Modal.Body>

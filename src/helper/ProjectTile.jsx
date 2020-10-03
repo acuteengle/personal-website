@@ -16,7 +16,7 @@ const ProjectTile = (props) => {
       <div className="project-image-container" id={projectDetails.id}>
         <a
           href={projectDetails.github_link}
-          className="github-link"
+          className="github-link d-none d-md-block"
           target="_blank"
           rel="noopener noreferrer"
         >
