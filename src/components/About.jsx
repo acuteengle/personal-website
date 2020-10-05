@@ -36,7 +36,7 @@ const About = (props) => {
             </p>
             <p>
               In my free time, I enjoy freestyle dancing, playing golf, running
-              marathons, cooking, traveling and shooting portrait photography.
+              marathons, cooking, traveling, and shooting portrait photography.
             </p>
             <p className="d-none d-md-block">
               I hope you enjoy my website! (Viewable on mobile as well!)
