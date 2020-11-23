@@ -1,15 +1,14 @@
 import React, { createRef } from "react";
-import "../App.css";
 import FadeInSection from "../helper/FadeInSection";
 
-import NavigationBar from "./NavigationBar.jsx";
+import NavigationBar from "./PageComponents/NavigationBar.jsx";
 import Introduction from "./Introduction.jsx";
 import About from "./About";
 import Skills from "./Skills";
 import Work from "./Work";
 import Projects from "./Projects";
 import Contact from "./Contact";
-import Footer from "./Footer";
+import Footer from "./PageComponents/Footer";
 
 const scrollToRef = (ref) => (event) => {
   ref.current.scrollIntoView(true, { behavior: "smooth" });

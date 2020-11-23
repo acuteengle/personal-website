@@ -1,16 +1,15 @@
 import React, { useState } from "react";
-import "../App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col, Modal } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
-import Tawkify from "../images/work/tawkify.png";
-import Envoys from "../images/work/envoys.png";
-import Wyzant from "../images/work/wyzant.png";
-import Workday from "../images/work/workday.png";
-import AmericanExpress from "../images/work/americanexpress.png";
-import TRXsystems from "../images/work/trxsystems.png";
+import Tawkify from "../../images/work/tawkify.png";
+import Envoys from "../../images/work/envoys.png";
+import Wyzant from "../../images/work/wyzant.png";
+import Workday from "../../images/work/workday.png";
+import AmericanExpress from "../../images/work/americanexpress.png";
+import TRXsystems from "../../images/work/trxsystems.png";
 
-import WorkTile from "../helper/WorkTile";
+import WorkTile from "./WorkTile";
+import WorkModal from "./WorkModal";
 
 const Work = (props) => {
   const work = [
@@ -119,11 +118,11 @@ const Work = (props) => {
         <hr />
         <div className="work-container">
           <Row className="justify-content-center">
-            {work.map((w, index) => {
+            {work.map((work, index) => {
               return (
                 <Col xs={6} md={4} key={index} className="work-tile-container">
                   <WorkTile
-                    workDetails={w}
+                    work={work}
                     setModalDetails={setModalDetails}
                     setShowModal={setShowModal}
                   />
@@ -134,34 +133,11 @@ const Work = (props) => {
           <p>*click images to see more</p>
         </div>
       </Container>
-      <Modal show={showModal} onHide={handleCloseModal} size="lg" centered>
-        <Modal.Header closeButton>
-          <div className="work-modal-header">
-            <div>
-              <img src={modalDetails.url} alt="" />
-            </div>
-            <div>
-              <Modal.Title>
-                <h2 className="work-modal-title">{modalDetails.title}</h2>
-              </Modal.Title>
-              <p>
-                {modalDetails.position} ({modalDetails.type})
-              </p>
-            </div>
-          </div>
-        </Modal.Header>
-        <Modal.Body>
-          <h4>Overview:</h4>
-          <p>{modalDetails.description}</p>
-          <h4>Key Highlights:</h4>
-          <ul>
-            {modalDetails.highlights &&
-              modalDetails.highlights.map((highlight, index) => {
-                return <li key={index}>{highlight}</li>;
-              })}
-          </ul>
-        </Modal.Body>
-      </Modal>
+      <WorkModal
+        show={showModal}
+        onHide={handleCloseModal}
+        modalDetails={modalDetails}
+      />
     </>
   );
 };

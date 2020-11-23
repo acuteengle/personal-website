@@ -1,15 +1,13 @@
 import React from "react";
-import "../App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
 
-import BengPhotography from "../images/projects/bengphotography.png";
-import PMPortfolio from "../images/projects/pmportfolio.png";
-import UserProfiles from "../images/projects/userprofiles.png";
-import DataVisualization from "../images/projects/datavisualization.png";
-import EscapeRoom from "../images/projects/escaperoom.png";
+import BengPhotography from "../../images/projects/bengphotography.png";
+import PMPortfolio from "../../images/projects/pmportfolio.png";
+import UserProfiles from "../../images/projects/userprofiles.png";
+import DataVisualization from "../../images/projects/datavisualization.png";
+import EscapeRoom from "../../images/projects/escaperoom.png";
 
-import ProjectTile from "../helper/ProjectTile";
+import ProjectTile from "./ProjectTile";
 
 const Projects = (props) => {
   const projects = [
@@ -56,10 +54,10 @@ const Projects = (props) => {
       <hr />
       <div className="projects-container">
         <Row className="justify-content-center">
-          {projects.map((p, index) => {
+          {projects.map((project, index) => {
             return (
               <Col xs={6} md={4} key={index} className="project-tile-container">
-                <ProjectTile projectDetails={p} />
+                <ProjectTile project={project} />
               </Col>
             );
           })}

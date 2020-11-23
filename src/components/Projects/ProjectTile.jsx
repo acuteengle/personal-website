@@ -1,21 +1,19 @@
 import React from "react";
-import "../App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProjectTile = (props) => {
-  const { projectDetails } = props;
+  const { project } = props;
 
   return (
     <a
-      href={projectDetails.website_link}
+      href={project.website_link}
       className="website-link"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <div className="project-image-container" id={projectDetails.id}>
+      <div className="project-image-container" id={project.id}>
         <a
-          href={projectDetails.github_link}
+          href={project.github_link}
           className="github-link d-none d-md-block"
           target="_blank"
           rel="noopener noreferrer"
@@ -26,8 +24,8 @@ const ProjectTile = (props) => {
             className="icon"
           />
         </a>
-        <p className="title">{projectDetails.title}</p>
-        <img src={projectDetails.url} alt="" className="project-image" />
+        <p className="title">{project.title}</p>
+        <img src={project.url} alt="" className="project-image" />
       </div>
     </a>
   );

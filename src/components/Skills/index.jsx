@@ -1,22 +1,20 @@
 import React from "react";
-import "../App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
 
-import react from "../images/skills/react.png";
-import Node from "../images/skills/node.png";
-import mySQL from "../images/skills/mysql.png";
-import Git from "../images/skills/git.png";
-import HTMLCSSJS from "../images/skills/htmlcssjs.png";
-import Jquery from "../images/skills/jquery.png";
-import Python from "../images/skills/python.png";
-import Bootstrap from "../images/skills/bootstrap.png";
-import MaterialUI from "../images/skills/materialui.png";
-import Express from "../images/skills/express.png";
-import Flask from "../images/skills/flask.png";
-import Django from "../images/skills/django.png";
+import react from "../../images/skills/react.png";
+import Node from "../../images/skills/node.png";
+import mySQL from "../../images/skills/mysql.png";
+import Git from "../../images/skills/git.png";
+import HTMLCSSJS from "../../images/skills/htmlcssjs.png";
+import Jquery from "../../images/skills/jquery.png";
+import Python from "../../images/skills/python.png";
+import Bootstrap from "../../images/skills/bootstrap.png";
+import MaterialUI from "../../images/skills/materialui.png";
+import Express from "../../images/skills/express.png";
+import Flask from "../../images/skills/flask.png";
+import Django from "../../images/skills/django.png";
 
-import SkillTile from "../helper/SkillTile";
+import SkillTile from "./SkillTile";
 
 const Skills = (props) => {
   const skills = [
@@ -77,7 +75,7 @@ const Skills = (props) => {
         {skills.map((skill, index) => {
           return (
             <Col xs={3} md={2} key={index}>
-              <SkillTile url={skill.url} title={skill.title} />
+              <SkillTile skill={skill} />
             </Col>
           );
         })}
