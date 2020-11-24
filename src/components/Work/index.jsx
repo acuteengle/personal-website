@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
+import ThisAble from "../../images/work/thisable.png";
+import AFXTech from "../../images/work/afxtech.png";
 import Tawkify from "../../images/work/tawkify.png";
 import Envoys from "../../images/work/envoys.png";
 import Wyzant from "../../images/work/wyzant.png";
@@ -32,7 +34,7 @@ const Work = (props) => {
       id: "workday",
       url: Workday,
       title: "Workday",
-      position: "Full-Stack Software Engineer",
+      position: "Software Application Engineer",
       type: "Full-Time",
       description:
         "Technical lead for the Academic Foundation functional area on the Workday Student product. ",
@@ -90,6 +92,21 @@ const Work = (props) => {
       ],
     },
     {
+      id: "afxtech",
+      url: AFXTech,
+      title: "AFX Tech",
+      position: "Full-Stack Software Engineer",
+      type: "Freelance",
+      description:
+        "Developed a full-stack Ruby on Rails solution that implements a sorting algorithm to fairly distribute dancers to various dance teams based on team preferences (AFX is a dance organization of 1000+ dancers at UC Berkeley.)",
+      highlights: [
+        "Each season, these dancers need to be distributed between various teams of different skill levels. Traditionally, these teams were picked manually and in person by the team directors/leaders. I built a flow to automate this process based on the director’s dancer preferences.",
+        "Lead solution design meetings with AFX Executive Board to discuss current processes and optimizations.",
+        "Communicated algorithm behavior to community leaders and team directors get buy in and agreement from stake-holders.",
+        "Met weekly to provide updates on the progress of the solution.",
+      ],
+    },
+    {
       id: "trx_systems",
       url: TRXsystems,
       title: "TRX Systems",
@@ -100,6 +117,21 @@ const Work = (props) => {
       highlights: [
         "Enhanced the precision of TRX’s 3D tracking product when dealing with changes in elevation.",
         "Developed from scratch an Android application that utilizes the TRX tracking system and an SQLite database to navigate a user with visual deficiencies (i.e full or partial blindness).",
+      ],
+    },
+    {
+      id: "thisable",
+      url: ThisAble,
+      title: "This Able",
+      position: "Founding Engineer",
+      type: "Freelance",
+      description:
+        "This Able is a non-profit that connects working adults with disabilities with students with disabilities to provide individual mentorship and guidance as they navigate their careers. I designed and developed the full architecture for our web application.",
+      highlights: [
+        "Architected both frontend and backend tech-stacks, deployment steps, development environments, and code quality patterns (MERN stack)",
+        "Mentored other developers by providing feedback on their code commits through code reviews",
+        "Collaborated with UI/UX leads to design user flows and interactions",
+        "Communicated with stake-holders on the progress of the application",
       ],
     },
   ];
