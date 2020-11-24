@@ -48,6 +48,36 @@ const Work = (props) => {
       ],
     },
     {
+      id: "afxtech",
+      url: AFXTech,
+      title: "AFX Tech",
+      position: "Full-Stack Software Engineer",
+      type: "Freelance",
+      description:
+        "Developed a full-stack Ruby on Rails solution that implements a sorting algorithm to fairly distribute dancers to various dance teams based on team preferences (AFX is a dance organization of 1000+ dancers at UC Berkeley.)",
+      highlights: [
+        "Each season, these dancers need to be distributed between various teams of different skill levels. Traditionally, these teams were picked manually and in person by the team directors/leaders. I built a flow to automate this process based on the director’s dancer preferences.",
+        "Lead solution design meetings with AFX Executive Board to discuss current processes and optimizations.",
+        "Communicated algorithm behavior to community leaders and team directors get buy in and agreement from stake-holders.",
+        "Met weekly to provide updates on the progress of the solution.",
+      ],
+    },
+    {
+      id: "wyzant",
+      url: Wyzant,
+      title: "Wyzant",
+      position: "Tutor",
+      type: "Freelance",
+      description:
+        "Tutored over 200 hours with students of all ages (working adults included) and skill levels on various coding languages, projects, assignments, libraries, frameworks, and tech stacks. ",
+      highlights: [
+        "Was hired for several consulting sessions by multiple companies looking for advice and guidance on how they should develop their web application.",
+        "Coached working adults looking to better understand coding concepts and languages for their job as well as those looking to pivot in their careers to tech.",
+        "Worked with high school students looking to get ahead, college students working on more advanced projects and courses, and adults taking full-time coding bootcamps.",
+        "Tutored topics include (but are not limited to): HTML, CSS, Javascript, jQuery, Bootstrap, React, Python, Flask, Django, Node, Express, ChartJS, Firebase, Sequelize, HandlebarsJS, MongoDB, mySQL, Axios, Vue, Discrete Math, git/GitHub.",
+      ],
+    },
+    {
       id: "envoys",
       url: Envoys,
       title: "Envoys",
@@ -74,36 +104,6 @@ const Work = (props) => {
         "Built a completely new front-end landing page for the Merchant Financing product.",
         "Incorporated animations and functionality to make the online experience easier for small businesses to apply for loans.",
         "Created a program to convert Java Objects and JSON data types between each other and transfer them across systems while maintaining their fields and attributes.",
-      ],
-    },
-    {
-      id: "wyzant",
-      url: Wyzant,
-      title: "Wyzant",
-      position: "Tutor",
-      type: "Freelance",
-      description:
-        "Tutored over 200 hours with students of all ages (working adults included) and skill levels on various coding languages, projects, assignments, libraries, frameworks, and tech stacks. ",
-      highlights: [
-        "Was hired for several consulting sessions by multiple companies looking for advice and guidance on how they should develop their web application.",
-        "Coached working adults looking to better understand coding concepts and languages for their job as well as those looking to pivot in their careers to tech.",
-        "Worked with high school students looking to get ahead, college students working on more advanced projects and courses, and adults taking full-time coding bootcamps.",
-        "Tutored topics include (but are not limited to): HTML, CSS, Javascript, jQuery, Bootstrap, React, Python, Flask, Django, Node, Express, ChartJS, Firebase, Sequelize, HandlebarsJS, MongoDB, mySQL, Axios, Vue, Discrete Math, git/GitHub.",
-      ],
-    },
-    {
-      id: "afxtech",
-      url: AFXTech,
-      title: "AFX Tech",
-      position: "Full-Stack Software Engineer",
-      type: "Freelance",
-      description:
-        "Developed a full-stack Ruby on Rails solution that implements a sorting algorithm to fairly distribute dancers to various dance teams based on team preferences (AFX is a dance organization of 1000+ dancers at UC Berkeley.)",
-      highlights: [
-        "Each season, these dancers need to be distributed between various teams of different skill levels. Traditionally, these teams were picked manually and in person by the team directors/leaders. I built a flow to automate this process based on the director’s dancer preferences.",
-        "Lead solution design meetings with AFX Executive Board to discuss current processes and optimizations.",
-        "Communicated algorithm behavior to community leaders and team directors get buy in and agreement from stake-holders.",
-        "Met weekly to provide updates on the progress of the solution.",
       ],
     },
     {
