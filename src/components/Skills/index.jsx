@@ -13,6 +13,12 @@ import MaterialUI from "../../images/skills/materialui.png";
 import Express from "../../images/skills/express.png";
 import Flask from "../../images/skills/flask.png";
 import Django from "../../images/skills/django.png";
+import Handlebars from "../../images/skills/handlebars.png";
+import MongoDB from "../../images/skills/mongodb.png";
+import PHP from "../../images/skills/php.png";
+import Ruby from "../../images/skills/ruby.png";
+import Rails from "../../images/skills/rails.png";
+import Sequelize from "../../images/skills/sequelize.png";
 
 import SkillTile from "./SkillTile";
 
@@ -31,16 +37,16 @@ const Skills = (props) => {
       title: "mySQL",
     },
     {
+      url: MongoDB,
+      title: "MongoDB",
+    },
+    {
       url: Git,
       title: "Git/Github",
     },
     {
-      url: Jquery,
-      title: "jQuery",
-    },
-    {
-      url: HTMLCSSJS,
-      title: "HTML/CSS/JS",
+      url: Express,
+      title: "Express",
     },
     {
       url: Python,
@@ -55,8 +61,20 @@ const Skills = (props) => {
       title: "MaterialUI",
     },
     {
-      url: Express,
-      title: "Express",
+      url: PHP,
+      title: "PHP",
+    },
+    {
+      url: HTMLCSSJS,
+      title: "HTML/CSS/JS",
+    },
+    {
+      url: Jquery,
+      title: "jQuery",
+    },
+    {
+      url: Sequelize,
+      title: "Sequelize",
     },
     {
       url: Flask,
@@ -65,6 +83,18 @@ const Skills = (props) => {
     {
       url: Django,
       title: "Django",
+    },
+    {
+      url: Handlebars,
+      title: "HandleBars",
+    },
+    {
+      url: Ruby,
+      title: "Ruby",
+    },
+    {
+      url: Rails,
+      title: "Rails",
     },
   ];
   return (
