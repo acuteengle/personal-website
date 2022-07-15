@@ -5,20 +5,31 @@ import react from "../../images/skills/react.png";
 import Node from "../../images/skills/node.png";
 import mySQL from "../../images/skills/mysql.png";
 import Git from "../../images/skills/git.png";
-import HTMLCSSJS from "../../images/skills/htmlcssjs.png";
-import Jquery from "../../images/skills/jquery.png";
+// import HTMLCSSJS from "../../images/skills/htmlcssjs.png";
+// import Jquery from "../../images/skills/jquery.png";
 import Python from "../../images/skills/python.png";
 import Bootstrap from "../../images/skills/bootstrap.png";
-import MaterialUI from "../../images/skills/materialui.png";
-import Express from "../../images/skills/express.png";
-import Flask from "../../images/skills/flask.png";
-import Django from "../../images/skills/django.png";
-import Handlebars from "../../images/skills/handlebars.png";
+// import MaterialUI from "../../images/skills/materialui.png";
+// import Express from "../../images/skills/express.png";
+// import Flask from "../../images/skills/flask.png";
+// import Django from "../../images/skills/django.png";
+// import Handlebars from "../../images/skills/handlebars.png";
 import MongoDB from "../../images/skills/mongodb.png";
-import PHP from "../../images/skills/php.png";
-import Ruby from "../../images/skills/ruby.png";
-import Rails from "../../images/skills/rails.png";
-import Sequelize from "../../images/skills/sequelize.png";
+// import PHP from "../../images/skills/php.png";
+// import Ruby from "../../images/skills/ruby.png";
+// import Rails from "../../images/skills/rails.png";
+// import Sequelize from "../../images/skills/sequelize.png";
+import Postgres from "../../images/skills/postgres.png";
+import AntDesign from "../../images/skills/ant-design.png";
+import ChartJS from "../../images/skills/chartjs.png";
+import NextJS from "../../images/skills/nextjs.png";
+import Knex from "../../images/skills/knex.png";
+import ReactHookForm from "../../images/skills/react-hook-form.png";
+import Firebase from "../../images/skills/firebase.png";
+import Cypress from "../../images/skills/cypress.png";
+import Jest from "../../images/skills/jest.png";
+import Heroku from "../../images/skills/heroku.png";
+import Netlify from "../../images/skills/netlify.png";
 
 import SkillTile from "./SkillTile";
 
@@ -33,6 +44,10 @@ const Skills = (props) => {
       title: "Node",
     },
     {
+      url: Postgres,
+      title: "Postgresql",
+    },
+    {
       url: mySQL,
       title: "mySQL",
     },
@@ -45,10 +60,6 @@ const Skills = (props) => {
       title: "Git/Github",
     },
     {
-      url: Express,
-      title: "Express",
-    },
-    {
       url: Python,
       title: "Python",
     },
@@ -57,44 +68,44 @@ const Skills = (props) => {
       title: "Bootstrap",
     },
     {
-      url: MaterialUI,
-      title: "MaterialUI",
+      url: AntDesign,
+      title: "Ant Design",
     },
     {
-      url: PHP,
-      title: "PHP",
+      url: ChartJS,
+      title: "Chart JS",
     },
     {
-      url: HTMLCSSJS,
-      title: "HTML/CSS/JS",
+      url: NextJS,
+      title: "Next JS",
     },
     {
-      url: Jquery,
-      title: "jQuery",
+      url: Knex,
+      title: "Knex",
     },
     {
-      url: Sequelize,
-      title: "Sequelize",
+      url: Firebase,
+      title: "Firebase",
     },
     {
-      url: Flask,
-      title: "Flask",
+      url: Heroku,
+      title: "Heroku",
     },
     {
-      url: Django,
-      title: "Django",
+      url: Netlify,
+      title: "Netlify",
     },
     {
-      url: Handlebars,
-      title: "HandleBars",
+      url: ReactHookForm,
+      title: "React Hook Form",
     },
     {
-      url: Ruby,
-      title: "Ruby",
+      url: Cypress,
+      title: "Cypress",
     },
     {
-      url: Rails,
-      title: "Rails",
+      url: Jest,
+      title: "Jest",
     },
   ];
   return (

@@ -31,6 +31,14 @@ const WorkModal = (props) => {
               return <li key={index}>{highlight}</li>;
             })}
         </ul>
+        {modalDetails.link && (
+          <>
+            <h4>Link</h4>
+            <p>
+              <a href={modalDetails.link} target="_blank" rel="noopener noreferrer">{modalDetails.title}</a>
+            </p>
+          </>
+        )}
       </Modal.Body>
     </Modal>
   );

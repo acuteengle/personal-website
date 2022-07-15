@@ -53,6 +53,17 @@ const Footer = (props) => {
               className="icon"
             />
           </a>
+          <a
+            href="https://www.youtube.com/c/BrandonEng/videos"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "youtube"]}
+              size="2x"
+              className="icon"
+            />
+          </a>
         </div>
         <Navbar>
           <Nav>
