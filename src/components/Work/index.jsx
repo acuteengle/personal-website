@@ -19,12 +19,12 @@ const Work = (props) => {
       position: "Senior Full-Stack Software Engineer",
       type: "Full-Time",
       description:
-        "Built features using React (and React Hooks), Material UI, Recompose on the Front-End as well as Node Express and PHP Slim on the backend.",
+        "Joined the company when it was only a few months old and built much of the initial product. The tech stack was React, Node Express, and Postresql deployed on Netlify and Heroku.",
       highlights: [
-        "Lead the initiative to build our brand new web application to allow users to sign up and create an account.",
-        "Developed RESTful API’s with middlewares for validations and redirecting.",
-        "Designed and developed relational database table schemas using mySQL.",
-        "Integrated several third party frameworks with our system (i.e. Stripe, Sendgrid, Segment, Optimizely, Webflow, Calendly).",
+        "Full-time employee #3",
+        "Spent lots of time on customer calls to get feedback and iterate on our product on our journey to find Product Market Fit.",
+        "The company is globally distributed and we worked completely asynchronous (except for with customer calls).",
+        "Set many of the initial engineering processes for the company as well as team culture."
       ],
     },
     {
@@ -37,7 +37,7 @@ const Work = (props) => {
         "Built features using React (and React Hooks), Material UI, Recompose on the Front-End as well as Node Express and PHP Slim on the backend.",
       highlights: [
         "Lead the initiative to build our brand new web application to allow users to sign up and create an account.",
-        "Developed RESTful API’s with middlewares for validations and redirecting.",
+        "Developed RESTful API's with middlewares for validations and redirecting.",
         "Designed and developed relational database table schemas using mySQL.",
         "Integrated several third party frameworks with our system (i.e. Stripe, Sendgrid, Segment, Optimizely, Webflow, Calendly).",
       ],
@@ -51,7 +51,7 @@ const Work = (props) => {
       description:
         "Technical lead for the Academic Foundation functional area on the Workday Student product. ",
       highlights: [
-        "Lead point of contact for for cross team discussions about dependencies, overlap, and API’s pertaining to my functional area.",
+        "Lead point of contact for for cross team discussions about dependencies, overlap, and API's pertaining to my functional area.",
         "Official Code Reviewer for code changes in the Academic Foundation code base.",
         "Designed and developed many features critical for go-live with our very first customers.",
         "Triaged and resolved numerous time-sensitive P0 issues.",
@@ -80,9 +80,9 @@ const Work = (props) => {
       position: "Android Developer",
       type: "Internship",
       description:
-        "Coded in Java to build an Android mobile app as well as communicate with our back-end API’s.",
+        "Coded in Java to build an Android mobile app as well as communicate with our back-end API's.",
       highlights: [
-        "Enhanced the precision of TRX’s 3D tracking product when dealing with changes in elevation.",
+        "Enhanced the precision of TRX's 3D tracking product when dealing with changes in elevation.",
         "Developed from scratch an Android application that utilizes the TRX tracking system and an SQLite database to navigate a user with visual deficiencies (i.e full or partial blindness).",
       ],
     },
