@@ -9,6 +9,7 @@ import Wyzant from "../../images/work/wyzant.png";
 import Foundation1882 from "../../images/projects/1882.png";
 import AZNZine from "../../images/projects/azn-zine.png";
 import R3cipebook from "../../images/projects/r3cipebook.png";
+import BNomadic from "../../images/projects/b-nomadic.png";
 
 import WorkTile from "../Work/WorkTile";
 import WorkModal from "../Work/WorkModal";
@@ -120,6 +121,18 @@ const Projects = (props) => {
         "Built with React, Express, Postgresql, and deployed on Netlify and Heroku",
       ],
       link: "https://r3cipebook.netlify.app/"
+    },
+    {
+      id: "b_nomadic",
+      url: BNomadic,
+      title: "B-Nomadic",
+      type: "Side Project",
+      description:
+        "A personal project to track my travels as a digital nomad and share resources",
+      highlights: [
+        "Built with React, Pigeon Maps, ChartJS, and deployed on Netlify",
+      ],
+      link: "https://b-nomadic.netlify.app/"
     },
     {
       id: "beng_photography",
