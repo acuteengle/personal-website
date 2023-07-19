@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-import BengPhotography from "../../images/projects/bengphotography.png";
 import ThisAble from "../../images/work/thisable.png";
 import AFXTech from "../../images/work/afxtech.png";
 import Envoys from "../../images/work/envoys.png";
-import Wyzant from "../../images/work/wyzant.png";
 import Foundation1882 from "../../images/projects/1882.png";
-import AZNZine from "../../images/projects/azn-zine.png";
 import R3cipebook from "../../images/projects/r3cipebook.png";
 import BNomadic from "../../images/projects/b-nomadic.png";
 
@@ -30,22 +27,6 @@ const Projects = (props) => {
         "Built the application with React, Express, Sequelize, Postgresql and deployed on Netlify and Heroku",
       ],
       link: "https://1882-foundation-database.netlify.app/"
-    },
-    {
-      id: "thisable",
-      url: ThisAble,
-      title: "This Able",
-      position: "Founding Engineer",
-      type: "Freelance",
-      description:
-        "This Able is a non-profit that connects working adults with disabilities with students with disabilities to provide individual mentorship and guidance as they navigate their careers. I designed and developed the full architecture for our web application.",
-      highlights: [
-        "Built the entire application with NextJS and deployed on Vercel and MongoDB",
-        "Integrated with Firebase real-time db to create a built in messaging platform.",
-        "Implemented mailJet email API to send notifications when mentors and mentees receive new messages on the platform or get a new mentor match",
-        "Built an admin dashboard to show metrics of user interactions in the application",
-      ],
-      link: "https://this-able.org/"
     },
     {
       id: "envoys",
@@ -80,36 +61,6 @@ const Projects = (props) => {
       link: "https://afx.dance/#/about"
     },
     {
-      id: "azn-zine",
-      url: AZNZine,
-      title: "AZN Zine",
-      position: "Photographer",
-      type: "Freelance",
-      description:
-        "Was recruited as a photographer for their bi-annual digital magazine issues that features Asian American cultural awareness",
-      highlights: [
-        "Designed content for their Instagram to create social media presence",
-        "Curated an album of photos related to each magazine issue's theme to be published",
-      ],
-      link: "https://aznzine.carrd.co/"
-    },
-    {
-      id: "wyzant",
-      url: Wyzant,
-      title: "Wyzant",
-      position: "Tutor",
-      type: "Freelance",
-      description:
-        "Tutored over 200 hours with students of all ages (working adults included) and skill levels on various coding languages, projects, assignments, libraries, frameworks, and tech stacks. ",
-      highlights: [
-        "Was hired for several consulting sessions by multiple companies looking for advice and guidance on how they should develop their web application.",
-        "Coached working adults looking to better understand coding concepts and languages for their job as well as those looking to pivot in their careers to tech.",
-        "Worked with high school students looking to get ahead, college students working on more advanced projects and courses, and adults taking full-time coding bootcamps.",
-        "Tutored topics include (but are not limited to): HTML, CSS, Javascript, jQuery, Bootstrap, React, Python, Flask, Django, Node, Express, ChartJS, Firebase, Sequelize, HandlebarsJS, MongoDB, mySQL, Axios, Vue, Discrete Math, git/GitHub.",
-      ],
-      link: "https://www.wyzant.com/"
-    },
-    {
       id: "r3cipeBook",
       url: R3cipebook,
       title: "R3cipebook",
@@ -135,17 +86,19 @@ const Projects = (props) => {
       link: "https://b-nomadic.netlify.app/"
     },
     {
-      id: "beng_photography",
-      url: BengPhotography,
-      title: "B.eng Photography",
-      type: "Side Project",
+      id: "thisable",
+      url: ThisAble,
+      title: "This Able",
+      position: "Founding Engineer",
+      type: "Freelance",
       description:
-        "A website to showcase my personal portfolio of photographs",
+        "This Able is a non-profit that connects working adults with disabilities with students with disabilities to provide individual mentorship and guidance as they navigate their careers. I designed and developed the full architecture for our web application.",
       highlights: [
-        "I have taken photos for content creators, proposals, social events, traveling, and personal portraits",
-        "Built with normal HTML, CSS, and Javascript and deployed on Netlify",
+        "Built the entire application with NextJS and deployed on Vercel and MongoDB",
+        "Integrated with Firebase real-time db to create a built in messaging platform.",
+        "Implemented mailJet email API to send notifications when mentors and mentees receive new messages on the platform or get a new mentor match",
+        "Built an admin dashboard to show metrics of user interactions in the application",
       ],
-      link: "https://beng-photography.netlify.app/"
     },
   ];
 
