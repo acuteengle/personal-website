@@ -51,7 +51,7 @@ const Work = (props) => {
       description:
         "Technical lead for the Academic Foundation functional area on the Workday Student product. ",
       highlights: [
-        "Lead point of contact for for cross team discussions about dependencies, overlap, and API's pertaining to my functional area.",
+        "Was the primary point of contact for cross team discussions about dependencies, overlap, and API's pertaining to my functional area.",
         "Official Code Reviewer for code changes in the Academic Foundation code base.",
         "Designed and developed many features critical for go-live with our very first customers.",
         "Triaged and resolved numerous time-sensitive P0 issues.",
