@@ -1,10 +1,14 @@
 import React from "react";
+import dayjs from "dayjs";
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import myself from "../images/myself.jpg";
 
 const About = (props) => {
+  const today = dayjs();
+  const startDate = dayjs('2014-06-01');
+  const yearsOfExperience = Math.ceil(today.diff(startDate, 'years', true));
   return (
     <Container className="section-container">
       <h2 className="section-title">A little bit about me</h2>
@@ -19,16 +23,10 @@ const About = (props) => {
           <div className="myself-description-container">
             <h3>Nice to meet you!</h3>
             <p>
-              My name is Brandon Eng and I am a software engineer with 8 years of experience in web development. I started my career at a big tech company working in ed-tech space, where I learned to be a reliable individual contributor and then eventually a tech lead of a team. I realized that I wanted more ownership of the product and made moves to work at a few very small seed start-ups. I really enjoy the fast-paced iteration process of a growth start-up trying to find Product Market Fit and the process of building things from the ground up. On the side, I have freelanced as a tutor, mentor, and tech consultant. I enjoy working on side-projects for small businesses. I am passionate about learning and personal growth and love the opportunity to help others grow along the way.
+              {`My name is Brandon Eng and I am a software engineer with ${yearsOfExperience} years of experience in web development. I started my career at a big tech company working in the ed-tech space, where I learned to be a reliable individual contributor and then eventually the tech lead of a team. I realized that I wanted more ownership and made moves to work at a several very small seed start-ups. I fell in love with the fast-paced learning environments of early stage start-ups and being surrounded by entrepreneurial energy while trying to find Product Market Fit. I really enjoy the process of bringing new innovations to life from the ground up.`}
             </p>
             <p>
-              In my free time, I enjoy traveling, dancing, playing golf, and photography.
-            </p>
-            <p className="d-none d-md-block">
-              I hope you enjoy my website! (Viewable on mobile as well!)
-            </p>
-            <p className="d-md-none d-xs-block">
-              I hope you enjoy my website! (Viewable on desktop as well!)
+              In my free time I enjoy traveling, dancing, playing golf, and photography.
             </p>
             <div className="social-media-icons">
               <a
