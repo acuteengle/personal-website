@@ -19,11 +19,11 @@ const Work = (props) => {
       position: "Senior Full-Stack Software Engineer",
       type: "Full-Time",
       description:
-        "Joined the company when it was only a few months old and built much of the initial product. The tech stack was React, Node Express, and Postresql deployed on Netlify and Heroku.",
+        "Joined the company when it was only a few months old and built much of the initial product. The tech stack was React, Node Express, and Postresql.",
       highlights: [
         "Full-time employee #3",
-        "Spent lots of time on customer calls to get feedback and iterate on our product on our journey to find Product Market Fit.",
-        "The company is globally distributed and we worked completely asynchronous (except for with customer calls).",
+        "Spent time interacting with customers to get feedback and iterate on our product on our journey to find Product Market Fit.",
+        "The company is globally distributed and completely asynchronous (i.e. no meetings).",
         "Set many of the initial engineering processes for the company as well as team culture."
       ],
     },
