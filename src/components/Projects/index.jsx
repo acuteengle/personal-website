@@ -71,7 +71,7 @@ const Projects = (props) => {
         "The issue that I was trying to solve was that when you find a recipe on the internet, you usually have to scroll up and down to look at the ingredients, the amounts, and the directions. I wanted to see both side by side without having to scroll back and forth",
         "Built with React, Express, Postgresql, and deployed on Netlify and Heroku",
       ],
-      link: "https://r3cipebook.netlify.app/"
+      link: null
     },
     {
       id: "b_nomadic",
